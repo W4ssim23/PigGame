@@ -49,7 +49,7 @@ def risk(still : bool ) -> bool :
 
 print("this is the Pig game .....") #complete the game explnation 
 
-players = []
+
 
 
 while True:
@@ -78,10 +78,12 @@ while True:
     except ValueError:
         print("Invalid input. Please enter an integer.")
 
-i = 0
-while i < playersnum :
-    players.append(0)
-    i += 1
+players = [0 for _ in range(playersnum)]  #more pythonic
+
+# i = 0
+# while i < playersnum :
+#     players.append(0)
+#     i += 1
 
 i = 0
 round = 0
